@@ -1,0 +1,43 @@
+.ActionsBar {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #dfe7e7;
+    padding: 0.75rem 1rem 1.25rem;
+    background-color: #fff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ActionsBarGroup {
+    display: flex;
+    gap: 0.75rem;
+    background: #ecf7f6;
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.ActionsBarButton {
+    min-width: 110px;
+    height: 56px;
+    border: none;
+    border-radius: 14px;
+    background: transparent;
+    color: #2b282d;
+    font-weight: 600;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.ActionsBarButtonActive {
+    background: #54d5cf;
+    color: #0f1f1d;
+    box-shadow: 0 6px 14px rgba(84, 213, 207, 0.35);
+}

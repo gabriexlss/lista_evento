@@ -1,0 +1,36 @@
+.CardPessoa {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.CardPessoaFoto {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CardPessoaFoto p {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+.CardPessoaNome {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

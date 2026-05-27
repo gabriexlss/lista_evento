@@ -1,0 +1,93 @@
+.AddEventoOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.AddEventoContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(92vw, 420px);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 20px 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.AddEventoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.AddEventoTitle {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.AddEventoDescription {
+  color: #444;
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+}
+
+.AddEventoClose {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+}
+
+.AddEventoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.AddEventoField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.AddEventoInput {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+  padding: 0 12px;
+  font-size: 0.95rem;
+}
+
+.AddEventoCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.AddEventoActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.AddEventoButton {
+  height: 40px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  background: #54d5cf;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.AddEventoButtonGhost {
+  background: #e9f7f6;
+}

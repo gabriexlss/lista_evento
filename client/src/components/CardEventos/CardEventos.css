@@ -1,0 +1,25 @@
+.CardEventos{
+    width: 95%;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-left: 4px solid #54d5cf;
+    border-radius: 8px;
+    padding: 0.25rem;
+}
+.CardEventosTitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+.CardEventosInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.CardEventosData, .CardEventosLocal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
