@@ -11,11 +11,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-1);
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 .InicioTitle{
     font-size: 1.5rem;
@@ -28,17 +28,17 @@
     width: 3rem;
     height: 3rem;
     border-radius: 8px;
-    background-color: #54d5cf;
+    background-color: var(--color-accent);
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: var(--color-black);
     font-size: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-2);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .InicioAddEventos:hover{
-    background-color: #43b9a9;
+    background-color: var(--color-accent-soft);
 }

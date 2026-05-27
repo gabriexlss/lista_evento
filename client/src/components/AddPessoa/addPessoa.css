@@ -1,7 +1,7 @@
 .AddPessoaOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: var(--overlay-backdrop);
 }
 
 .AddPessoaContent {
@@ -10,10 +10,10 @@
   left: 50%;
   width: min(92vw, 420px);
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: var(--color-white);
   border-radius: 12px;
   padding: 20px 20px 24px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-3);
 }
 
 .AddPessoaHeader {
@@ -29,7 +29,7 @@
 }
 
 .AddPessoaDescription {
-  color: #444;
+  color: var(--color-ink);
   margin: 0 0 16px;
   font-size: 0.95rem;
 }
@@ -39,7 +39,7 @@
   background: transparent;
   cursor: pointer;
   font-size: 1rem;
-  color: #555;
+  color: var(--color-ink-soft);
 }
 
 .AddPessoaForm {
@@ -58,7 +58,7 @@
 .AddPessoaInput {
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--color-border);
   padding: 0 12px;
   font-size: 0.95rem;
 }
@@ -82,12 +82,12 @@
   padding: 0 16px;
   border: none;
   border-radius: 8px;
-  background: #54d5cf;
-  color: #000;
+  background: var(--color-accent);
+  color: var(--color-black);
   font-weight: 600;
   cursor: pointer;
 }
 
 .AddPessoaButtonGhost {
-  background: #e9f7f6;
+  background: var(--color-accent-soft);
 }

@@ -4,11 +4,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-1);
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 .PrincipalTitle{
     font-size: 1.5rem;

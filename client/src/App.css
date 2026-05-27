@@ -1,3 +1,30 @@
+.app,
+:root {
+  --color-white: #ffffff;
+  --color-black: #131111;
+  --color-ink: #2d2d2d;
+  --color-ink-soft: #2b282d;
+  --color-border: #00000035;
+  --color-accent: #54d5cf;
+  --color-accent-soft: #54d5cea3;
+  --color-accent-ink: #0f1f1d;
+  --color-success: #01cb15;
+  --color-error: #ff4d4d;
+  --color-surface: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --overlay-backdrop: rgba(0, 0, 0, 0.35);
+  --shadow-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-3: 0 12px 30px rgba(0, 0, 0, 0.2);
+  --shadow-4: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-5: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-6: 0 6px 14px rgba(84, 213, 207, 0.35);
+  --shadow-inset-1: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  --font-primary: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .app {
   min-height: 100vh;
+  color: var(--color-ink);
+  font-family: var(--font-primary);
 }

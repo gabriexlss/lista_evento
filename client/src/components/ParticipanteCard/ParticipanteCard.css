@@ -1,0 +1,83 @@
+.ParticipanteCard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-1);
+}
+
+.ParticipanteCardVoce {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-soft);
+}
+
+.ParticipanteCardAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent-soft);
+  color: var(--color-ink);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.ParticipanteCardVoce .ParticipanteCardAvatar {
+  background-color: var(--color-accent);
+  color: var(--color-black);
+}
+
+.ParticipanteCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.ParticipanteCardNome {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ParticipanteCardStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-ink-soft);
+}
+
+.ParticipanteCardStatusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: var(--color-border);
+}
+
+.ParticipanteCardStatusPago {
+  color: var(--color-ink);
+}
+
+.ParticipanteCardStatusPago .ParticipanteCardStatusDot {
+  background-color: var(--color-accent);
+}
+
+.ParticipanteCardStatusPendente {
+  color: var(--color-ink-soft);
+}
+
+.ParticipanteCardStatusPendente .ParticipanteCardStatusDot {
+  background-color: var(--color-border);
+}

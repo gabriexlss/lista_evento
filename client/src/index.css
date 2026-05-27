@@ -1,9 +1,9 @@
 :root {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-primary, system-ui, sans-serif);
   line-height: 1.5;
   font-weight: 400;
-  color: #111;
-  background-color: #efeded;
+  color: var(--color-ink);
+  background-color: var(--color-surface);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

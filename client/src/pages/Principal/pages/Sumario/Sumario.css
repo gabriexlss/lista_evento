@@ -1,0 +1,7 @@
+.Sumario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    min-height: calc(100vh + 30vh);
+}

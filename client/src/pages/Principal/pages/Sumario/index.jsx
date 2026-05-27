@@ -1,7 +1,9 @@
 
 const Sumario = () => {
   return (
-    <div>Sumario</div>
+    <div className="Sumario">
+      
+    </div>
   )
 }
 
