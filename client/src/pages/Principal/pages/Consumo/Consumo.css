@@ -1,0 +1,206 @@
+.Consumo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    min-height: calc(100vh + 30vh);
+}
+.ConsumoTitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.ConsumoHorarioeLocal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+.ConsumoAniversariante {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    background-color: #01cb15;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    color: black;
+    font-weight: bold;
+    animation: AniversarianteBounce 2s infinite;
+}
+
+.ConsumoAniversariante p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+@keyframes AniversarianteBounce {
+    0% { 
+        transform: translateY(0); 
+        animation-timing-function: ease-out; 
+    }
+    25% { 
+        transform: translateY(-8px); 
+        animation-timing-function: ease-in; 
+    }
+    50% { 
+        transform: translateY(0); 
+        animation-timing-function: ease-out; 
+    }
+    75% { 
+        transform: translateY(-8px); 
+        animation-timing-function: ease-in; 
+    }
+}
+.ConsumoTotal{
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    color: black;
+    border: 1px solid #00000035;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.ConsumoTotal h4{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+.ConsumoTotalValorContainer{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+.ConsumoTotalSifra{
+    font-size: 1.3rem;
+    color: #2d2d2d;
+    margin-top: 0.5rem;
+}
+.ConsumoTotalValor{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.ConsumoTotalCentavos{
+    font-size: 1.2rem;
+    color: #2d2d2d;
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+}
+.ConsumoTotalPorcentagem{
+    color: #2d2d2d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: auto;
+}
+.ConsumoTotalPorcentagemInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: #2d2d2d;
+    width: 100%;
+}
+.ConsumoTotalPorcentagemInfo p:nth-of-type(2){
+    margin-left: auto;
+}
+.ConsumoTotalPorcentagemBarra {
+    width: 100%;
+    height: 8px;
+    background-color: #00000035;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+.ConsumoTotalPorcentagemBarraPreenchida {
+    height: 100%;
+    background-color: #54d5cf;
+    border-radius: 4px;
+    width: 50%;
+}
+.ConsumoPessoas{
+    width: 90%;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    color: black;
+    border: 1px solid #00000035;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.ConsumoPessoas span{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #2d2d2d;
+    background-color: #54d5cea3;
+}
+.ConsumoPessoas p:nth-of-type(1){
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.ConsumoPessoas p:nth-of-type(2){
+    margin: 0;
+    font-size: 0.9rem;
+    color: #2d2d2d;
+}
+.ConsumoLancar{
+    width: 100%;
+    position: fixed;
+    bottom: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+}
+.ConsumoLancar button{
+    padding: 0.90rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    background-color: #54d5cf;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ConsumoLancar button:hover{
+    background-color: #54d5cea3;
+}
+.ConsumoLancarIcon{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    margin-right: 8px;
+}
