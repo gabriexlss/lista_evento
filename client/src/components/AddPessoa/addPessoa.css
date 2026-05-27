@@ -63,6 +63,11 @@
   font-size: 0.95rem;
 }
 
+.AddPessoaInput:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent 75%);
+}
+
 .AddPessoaCheckbox {
   display: flex;
   align-items: center;

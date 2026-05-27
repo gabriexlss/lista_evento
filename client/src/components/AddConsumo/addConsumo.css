@@ -1,10 +1,10 @@
-.AddEventoOverlay {
+.AddConsumoOverlay {
   position: fixed;
   inset: 0;
   background: var(--overlay-backdrop);
 }
 
-.AddEventoContent {
+.AddConsumoContent {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -16,25 +16,25 @@
   box-shadow: var(--shadow-3);
 }
 
-.AddEventoHeader {
+.AddConsumoHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 6px;
 }
 
-.AddEventoTitle {
+.AddConsumoTitle {
   font-size: 1.1rem;
   margin: 0;
 }
 
-.AddEventoDescription {
+.AddConsumoDescription {
   color: var(--color-ink);
   margin: 0 0 16px;
   font-size: 0.95rem;
 }
 
-.AddEventoClose {
+.AddConsumoClose {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -42,20 +42,20 @@
   color: var(--color-ink-soft);
 }
 
-.AddEventoForm {
+.AddConsumoForm {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.AddEventoField {
+.AddConsumoField {
   display: flex;
   flex-direction: column;
   gap: 6px;
   font-size: 0.95rem;
 }
 
-.AddEventoInput {
+.AddConsumoInput {
   height: 40px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
@@ -63,26 +63,19 @@
   font-size: 0.95rem;
 }
 
-.AddEventoInput:focus {
+.AddConsumoInput:focus {
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent 75%);
 }
 
-.AddEventoCheckbox {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-}
-
-.AddEventoActions {
+.AddConsumoActions {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   margin-top: 8px;
 }
 
-.AddEventoButton {
+.AddConsumoButton {
   height: 40px;
   padding: 0 16px;
   border: none;
@@ -93,6 +86,6 @@
   cursor: pointer;
 }
 
-.AddEventoButtonGhost {
+.AddConsumoButtonGhost {
   background: var(--color-accent-soft);
 }

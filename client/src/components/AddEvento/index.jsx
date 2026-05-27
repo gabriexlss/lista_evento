@@ -27,8 +27,8 @@ const AddEvento = ({ children }) => {
               <input className="AddEventoInput" name="nome" type="text" />
             </label>
             <label className="AddEventoField">
-              <span>Data</span>
-              <input className="AddEventoInput" name="data" type="date" />
+              <span>Data e hora</span>
+              <input className="AddEventoInput" name="data" type="datetime-local" />
             </label>
             <label className="AddEventoField">
               <span>Local</span>

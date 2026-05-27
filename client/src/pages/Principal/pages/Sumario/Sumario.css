@@ -1,7 +1,91 @@
+
 .Sumario{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    min-height: calc(100vh + 30vh);
+    min-height: 100vh;
+    padding-bottom: 6rem;
+}
+.SumarioHeader{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+}
+.SumarioHeader h1{
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--color-ink);
+}
+.SumarioTotal{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    background-color: var(--color-white);
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    color: var(--color-ink-soft);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-5);
+}
+.SumarioTotalValorContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    color: var(--color-black);
+}
+.SumarioTotalSifra{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-ink-ultrasoft);
+}
+.SumarioTotalValor{
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.SumarioTotalCentavos{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.SumarioTotalPago{
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--color-ink-soft);
+    background-color: color-mix(in sRGB, var(--color-accent) 20%, transparent 80%);
+}
+.SumarioTotalPagoIcon{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-ink);
+    background-color: var(--color-accent);
+    border-radius: 100%;
+}
+.SumarioTotalPago p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-ink-soft);
+    font-weight: 600;
+}
+.SumarioLista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
 }

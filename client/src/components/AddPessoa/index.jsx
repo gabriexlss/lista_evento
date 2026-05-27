@@ -26,6 +26,10 @@ const AddPessoa = ({ children }) => {
               <span>Nome</span>
               <input className="AddPessoaInput" name="nome" type="text" />
             </label>
+            <label className="AddPessoaCheckbox">
+              <input name="aniversariante" type="checkbox" />
+              <span>Sou aniversariante</span>
+            </label>
             <div className="AddPessoaActions">
               <Dialog.Close asChild>
                 <button className="AddPessoaButton AddPessoaButtonGhost" type="button">

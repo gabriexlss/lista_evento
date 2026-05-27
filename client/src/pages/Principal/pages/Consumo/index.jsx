@@ -1,5 +1,6 @@
 import { Calendar, MapPin, Cake, Users, Plus } from 'lucide-react'
 import ParticipanteCard from '../../../../components/ParticipanteCard'
+import AddConsumo from '../../../../components/AddConsumo'
 import "./Consumo.css"
 const Consumo = () => {
   const participantes = [
@@ -25,6 +26,19 @@ const Consumo = () => {
       <div className="ConsumoAniversariante">
         <Cake size={16} />
         <p>Aniversariante do dia: Carlos Vinicius</p>
+      </div>
+
+      <div className="ConsumoMeuConsumo">
+        <h4>Meu Consumo</h4>
+        <span className="ConsumoMeuConsumoValor">
+          <div className="ConsumoTotalSifra">R$</div>
+          <div className="ConsumoTotalValor">97</div>
+          <div className="ConsumoTotalCentavos">,50</div>
+        </span>
+        <div className="ConsumoMeuConsumoFooter">
+          <p className="ConsumoMeuConsumoResumo">3 itens • 1 compartilhado</p>
+          <button className="ConsumoPagoButton" type="button">Ja paguei</button>
+        </div>
       </div>
 
       <div className="ConsumoTotal">
@@ -68,12 +82,14 @@ const Consumo = () => {
         ))}
       </div>
       <div className="ConsumoLancar">
-        <button>
-          <div className="ConsumoLancarIcon">
-            <Plus size={20} />
-          </div>
-          <p>Registrar Novo Consumo</p>
-        </button>
+        <AddConsumo>
+          <button>
+            <div className="ConsumoLancarIcon">
+              <Plus size={20} />
+            </div>
+            <p>Registrar Novo Consumo</p>
+          </button>
+        </AddConsumo>
       </div>
     </div>
   )

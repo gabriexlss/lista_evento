@@ -1,5 +1,8 @@
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css'
 import { Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import { toastConfig } from './utils/notify'
 
 // Paginas
 import Inicio from './pages/Inicio'
@@ -16,6 +19,7 @@ function App() {
         <Route path="/app/*" element={<Principal />} />
         <Route path="*" element={<Inicio />} />
       </Routes>
+      <ToastContainer {...toastConfig} />
     </main>
   )
 }
