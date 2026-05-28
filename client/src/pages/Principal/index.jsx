@@ -15,9 +15,9 @@ const Principal = () => {
     <main className="Principal">
       <Header />
       <Routes>
-        <Route path="/setup" element={<Setup />} />
-        <Route path="/consumo" element={<Consumo />} />
-        <Route path="/sumario" element={<Sumario />} />
+        <Route path="setup" element={<Setup />} />
+        <Route path="consumo" element={<Consumo />} />
+        <Route path="sumario" element={<Sumario />} />
         <Route path="*" element={<Consumo />} />
       </Routes>
       <ActionsBar />

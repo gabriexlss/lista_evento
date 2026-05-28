@@ -1,11 +1,15 @@
 import './ParticipanteCard.css'
 
-const ParticipanteCard = ({ nome, iniciais, status, isVoce }) => {
-  const statusLabel = status === 'pago' ? 'Pago' : 'Pendente'
-  const statusClass = status === 'pago' ? 'ParticipanteCardStatusPago' : 'ParticipanteCardStatusPendente'
+const ParticipanteCard = ({ nome, iniciais, status, isVoce, isAniversariante }) => {
+  const statusLabel = isAniversariante ? 'Presente' : status === 'pago' ? 'Pago' : 'Pendente'
+  const statusClass = isAniversariante
+    ? 'ParticipanteCardStatusPresente'
+    : status === 'pago'
+      ? 'ParticipanteCardStatusPago'
+      : 'ParticipanteCardStatusPendente'
 
   return (
-    <div className={`ParticipanteCard ${isVoce ? 'ParticipanteCardVoce' : ''}`.trim()}>
+    <div className={`ParticipanteCard ${isVoce ? 'ParticipanteCardVoce' : ''} ${isAniversariante ? 'ParticipanteCardAniversariante' : ''}`.trim()}>
       <div className="ParticipanteCardAvatar">
         <span>{iniciais}</span>
       </div>

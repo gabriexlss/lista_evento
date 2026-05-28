@@ -4,6 +4,7 @@
     gap: 10px;
     align-items: center;
     min-height: calc(100vh + 30vh);
+    padding-bottom: 16rem;
 }
 .ConsumoTitle{
     font-size: 1.5rem;
@@ -79,9 +80,18 @@
     color: var(--color-ink);
     cursor: pointer;
     white-space: nowrap;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .ConsumoPagoButton:hover{
     background-color: var(--color-accent);
+}
+.ConsumoPagoButton.undo {
+    border-color: var(--color-error);
+    background-color: color-mix(in sRGB, var(--color-error) 15%, transparent 85%);
+    color: color-mix(in sRGB, var(--color-error) 80%, black 20%);
+}
+.ConsumoPagoButton.undo:hover {
+    background-color: color-mix(in sRGB, var(--color-error) 25%, transparent 75%);
 }
 
 @keyframes AniversarianteBounce {

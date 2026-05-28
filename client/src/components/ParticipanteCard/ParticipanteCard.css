@@ -25,6 +25,7 @@
   color: var(--color-ink);
   font-weight: 700;
   font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 .ParticipanteCardVoce .ParticipanteCardAvatar {
@@ -80,4 +81,22 @@
 
 .ParticipanteCardStatusPendente .ParticipanteCardStatusDot {
   background-color: var(--color-border);
+}
+
+.ParticipanteCardStatusPresente {
+  color: var(--color-ink);
+}
+
+.ParticipanteCardStatusPresente .ParticipanteCardStatusDot {
+  background-color: var(--color-success);
+}
+
+.ParticipanteCardAniversariante {
+  border-color: var(--color-success);
+  background-color: color-mix(in srgb, var(--color-success) 12%, var(--color-white) 88%);
+}
+
+.ParticipanteCardAniversariante .ParticipanteCardAvatar {
+  background-color: var(--color-success);
+  color: var(--color-black);
 }

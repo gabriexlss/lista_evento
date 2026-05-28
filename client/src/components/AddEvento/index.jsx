@@ -25,7 +25,7 @@ const AddEvento = ({ children }) => {
 
     try {
       const result = await EventosAPI.createEvento(data)
-      notify.success(result.message)
+      notify.success(result.message || 'Evento criado')
       console.log(result)
       setOpen(false)
     } catch (error) {

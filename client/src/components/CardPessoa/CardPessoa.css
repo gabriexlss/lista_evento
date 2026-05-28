@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 .CardPessoaFoto p {
     font-size: 2rem;

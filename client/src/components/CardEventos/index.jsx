@@ -16,11 +16,11 @@ const formatDateTime = (value) => {
   return `${hours}:${minutes} do dia ${day}/${month}/${year}`
 }
 
-const CardEventos = ({ name, starts_at, location }) => {
+const CardEventos = ({ id, name, starts_at, location }) => {
   const navigate = useNavigate()
 
   return (
-    <div className="CardEventos" onClick={() => navigate('/pessoa')}>
+    <div className="CardEventos" onClick={() => navigate(`/pessoa/${id}`)}>
         <h2 className="CardEventosTitle">{name}</h2>
       <div className="CardEventosInfo">
         <div className="CardEventosData">

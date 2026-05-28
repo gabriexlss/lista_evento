@@ -1,19 +1,21 @@
 import './ActionsBar.css'
 import { ClipboardList, Settings, Wallet } from 'lucide-react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, useParams } from 'react-router-dom'
 import { useMemo } from 'react'
 
 const ActionsBar = () => {
     const navigate = useNavigate()
     const { pathname } = useLocation()
+    const { eventoId } = useParams()
 
     const pagina = useMemo(() => {
-        switch (pathname) {
-            case '/app/setup':
+        const page = pathname.split('/')[3]
+        switch (page) {
+            case 'setup':
                 return 'setup'
-            case '/app/consumo':
+            case 'consumo':
                 return 'consumo'
-            case '/app/sumario':
+            case 'sumario':
                 return 'sumario'
             default:
                 return 'consumo'
@@ -22,15 +24,15 @@ const ActionsBar = () => {
   return (
     <footer className="ActionsBar">
       <div className="ActionsBarGroup">
-        <button className={`ActionsBarButton ${pagina === 'setup' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate('/app/setup')}>
+        <button className={`ActionsBarButton ${pagina === 'setup' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate(`/app/${eventoId}/setup`)}>
           <Settings size={18} />
           Setup
         </button>
-        <button className={`ActionsBarButton ${pagina === 'consumo' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate('/app/consumo')}>
+        <button className={`ActionsBarButton ${pagina === 'consumo' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate(`/app/${eventoId}/consumo`)}>
           <Wallet size={18} />
           Consumo
         </button>
-        <button className={`ActionsBarButton ${pagina === 'sumario' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate('/app/sumario')}>
+        <button className={`ActionsBarButton ${pagina === 'sumario' ? 'ActionsBarButtonActive' : ''}`} type="button" onClick={() => navigate(`/app/${eventoId}/sumario`)}>
           <ClipboardList size={18} />
           Sumário
         </button>

@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS events (
   location text NOT NULL,
   is_birthday boolean NOT NULL DEFAULT false,
   rodizio_price numeric(10,2) NOT NULL DEFAULT 0,
-  created_at timestamptz NOT NULL DEFAULT now(),
+  created_at timestamptz NOT NULL DEFAULT now()
 );
 
 CREATE TABLE IF NOT EXISTS people (

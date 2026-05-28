@@ -5,7 +5,7 @@
     gap: 10px;
     align-items: center;
     min-height: 100vh;
-    padding-bottom: 6rem;
+    padding-bottom: 12rem;
 }
 .SumarioHeader{
     width: 90%;
@@ -88,4 +88,21 @@
     flex-direction: column;
     align-items: center;
     gap: 0.9rem;
+}
+
+.SumarioTotal.pending {
+    border-top-color: var(--color-error);
+}
+
+.SumarioTotalPago.pending {
+    background-color: color-mix(in sRGB, var(--color-error) 15%, transparent 85%);
+}
+
+.SumarioTotalPago.pending .SumarioTotalPagoIcon {
+    background-color: var(--color-error);
+    color: var(--color-white);
+}
+
+.SumarioTotalPago.pending p {
+    color: color-mix(in sRGB, var(--color-error) 80%, black 20%);
 }

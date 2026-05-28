@@ -4,22 +4,48 @@
     width: 100%;
     min-height: calc(100vh + 30vh);
     align-items: center;
+    padding-bottom: 8rem;
 }
 .PessoaHeader{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-1);
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     background-color: var(--color-white);
 }
+
+.PessoaBackButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-ink);
+    transition: background-color 0.2s ease;
+}
+
+.PessoaBackButton:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.PessoaHeaderSpacer {
+    width: 36px;
+}
+
 .PessoaTitle{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    margin: 0;
+    flex: 1;
+    text-align: center;
 }
 .PessoaSubTitle{
     font-size: 0.9rem;
@@ -64,4 +90,63 @@
 }
 .PessoaFooter button:hover{
     background-color: var(--color-accent-soft);
+}
+.PessoaEmptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    border: 1px dashed var(--color-border);
+    width: calc(100% - 2rem);
+    max-width: 420px;
+    margin: 2rem auto;
+    box-shadow: var(--shadow-1);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.PessoaEmptyIcon {
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.PessoaEmptyText {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-ink);
+}
+
+.PessoaEmptySubText {
+    font-size: 0.85rem;
+    color: var(--color-ink-ultrasoft);
+    max-width: 280px;
+    line-height: 1.4;
 }

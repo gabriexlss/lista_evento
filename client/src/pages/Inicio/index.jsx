@@ -65,6 +65,7 @@ const Inicio = () => {
     {eventos.map((evento) => (
       <CardEventos
         key={evento.id}
+        id={evento.id}
         name={evento.name}
         starts_at={evento.starts_at}
         location={evento.location}

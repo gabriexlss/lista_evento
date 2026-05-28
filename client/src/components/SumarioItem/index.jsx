@@ -1,6 +1,7 @@
 import './SumarioItem.css'
+import EditConsumo from '../EditConsumo'
 
-const SumarioItem = ({ nome, iniciais, total, status, itens, isVoce, isAniversariante }) => {
+const SumarioItem = ({ nome, iniciais, total, status, itens, isVoce, isAniversariante, onUpdated }) => {
   const statusLabel = isAniversariante ? 'Presente' : status === 'pago' ? 'Pago' : 'Pendente'
   const statusClass = isAniversariante
     ? 'SumarioItemStatusPresente'
@@ -26,12 +27,21 @@ const SumarioItem = ({ nome, iniciais, total, status, itens, isVoce, isAniversar
         </div>
       </header>
       <div className="SumarioItemDetalhes">
-        {itens.map((item) => (
+        {itens.map((item, idx) => (
           <div
-            key={item.label}
+            key={item.id || `item-${idx}`}
             className={`SumarioItemLinha ${item.isShared ? 'SumarioItemLinhaCompartilhado' : ''}`.trim()}
           >
-            <span>{item.label}</span>
+            <div className="SumarioItemLinhaEsquerda">
+              <span>{item.label}</span>
+              {isVoce && item.isEditable && (
+                <EditConsumo item={item} onUpdated={onUpdated}>
+                  <button className="SumarioItemEditBtn" type="button">
+                    Editar
+                  </button>
+                </EditConsumo>
+              )}
+            </div>
             <strong>{item.valor}</strong>
           </div>
         ))}

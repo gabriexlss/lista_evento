@@ -15,8 +15,8 @@ function App() {
     <main className="app">
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/pessoa" element={<Pessoa />} />
-        <Route path="/app/*" element={<Principal />} />
+        <Route path="/pessoa/:eventoId" element={<Pessoa />} />
+        <Route path="/app/:eventoId/*" element={<Principal />} />
         <Route path="*" element={<Inicio />} />
       </Routes>
       <ToastContainer {...toastConfig} />
